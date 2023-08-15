@@ -21,7 +21,7 @@ const {
 } = process.env;
 
 const sequelize = new Sequelize(DB_DEPLOY, {
-  host: 'localhost',
+  host: `${DB_HOST}`,
   dialect: 'postgres',
   logging: false
 });
